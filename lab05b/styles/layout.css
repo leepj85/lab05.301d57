@@ -1,0 +1,8 @@
+/* NOTE: Layout rules divide the page into sections. Layouts hold one or more modules together. */
+
+p {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}

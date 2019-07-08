@@ -1,0 +1,154 @@
+/* NOTE: Modules are the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on. */
+
+@media screen and (min-width: 768px) {
+
+  main {
+    display: grid;
+    width: 960px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a a a a"
+      "b c c d d"
+      "b e f g h"
+      "b i i i i";
+  }
+
+  div:first-child {
+    grid-area: a;
+    height: 100px;
+    background-color: lightpink;
+  }
+
+  div:nth-child(2) {
+    grid-area: b;
+    height: 600px;
+    width: 200px;
+    background-color: aqua
+  }
+
+  div:nth-child(3) {
+    grid-area: c;
+    height: 200px;
+    width: 380px;
+    background-color: azure
+  }
+
+  div:nth-child(4) {
+    width: 380px;
+    height: 200px;
+    grid-area: d;
+    background-color: bisque;
+  }
+
+  div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8) {
+    width: 190px;
+    height: 250px;
+  }
+
+  div:nth-child(5) {
+    grid-area: e;
+    background-color: crimson;
+  }
+  
+  div:nth-child(6) {
+    grid-area: f;
+    background-color: blueviolet;
+  }
+  
+  div:nth-child(7) {
+    grid-area: g;
+    background-color: darkgrey;
+  }
+  
+  div:nth-child(8) {
+    grid-area: h;
+    background-color: chartreuse;
+  }
+  
+  div:last-child {
+    width: 760px;
+    height: 150px;
+    grid-area: i;
+    background-color: coral;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  main {
+    max-width: 480px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d d"
+      "e f"
+      "g h"
+      "i i";
+  }
+
+  div:first-child, div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+    width: 100%;
+  }
+  div:first-child {
+    grid-area: a;
+    width: 480px;
+    height: 75px;
+    background-color: fuchsia;
+  }
+
+  div:nth-child(2) {
+    grid-area: b;
+    width: 480px;
+    height: 150px;
+    background-color: aquamarine;
+  }
+
+  div:nth-child(3) {
+    grid-area: c;
+    width: 480px;
+    height: 125px;
+    background-color: beige;
+  } 
+  
+  div:nth-child(4) {
+    width: 480px;
+    grid-area: d;
+    height: 125px;
+    background-color: yellow
+  }
+
+  div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8) {
+    width: 240px;
+    height: 250px;
+  }
+
+  div:nth-child(5) {
+    grid-area: e;
+    background-color: blue;
+  }
+  
+  div:nth-child(6) {
+    grid-area: f;
+    background-color: brown;
+  }
+  
+  div:nth-child(7) {
+    grid-area: g;
+    background-color: cadetblue;
+  }
+  
+  div:nth-child(8) {
+    grid-area: h;
+    background-color: chocolate;
+  }
+
+  div:last-child {
+    grid-area: i;
+    width: 480px;
+    height: 80px;
+    background-color: cornflowerblue;
+  }
+}
